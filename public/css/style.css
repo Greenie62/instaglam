@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Luckiest Guy', cursive;
+    position:relative;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    background:linear-gradient(to right,lightgray,gray,lightgray)
+}
+
+
+header{
+    height:10vh;
+}
+
+.headerDiv{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    background:white;
+    border-radius:50%;
+    border:1px solid black;
+    top:5%;
+}
+
+.headerh1{
+    letter-spacing:3px;
+    font-size:40px;
+    top:5px;
+}
+
+
+.actionRow{
+    height:10vh;
+    width:100%;
+    border:1px solid black;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.savebutton, .camerabutton{
+    /* position:absolute;
+    top:0;
+    left:0; */
+    cursor:pointer;
+}
+
+
+.camerabutton{
+    margin-left:10%;
+}
+
+/* .fileinput{
+    left:20%;
+} */
+
+.camerabutton:hover{
+    opacity:.7;
+}
+
+
+.mainContainer{
+    height:70%;
+    width:100%;
+}
+
+
+.mainCard{
+    height:70%;
+    width:90%;
+    top:15%;
+    left:5%;
+    border:1px solid black;
+    display:flex;
+}
+
+.vidContainer, .imageGrid{
+    width:50%;
+    height:100%;
+}
+
+.imageGrid{
+    /* display:flex;
+    flex-direction:column;
+    align-items:center;
+    flex-direction:column; */
+    overflow:auto;
+}
+
+.picDiv{
+    border:1px solid black;
+    border-radius:10%;
+    width:100px;
+    height:100px;
+    left:15%;
+    margin-bottom:2px;
+}
+
+.printPic{
+    height:100px;
+    width:100px;
+}
+
+.videocard, .capturecard{
+    height:50%;
+    width:100%;
+    border:1px solid black;
+}
+
+.videocard{
+    background:purple;
+}
+
+.capturebtn{
+    top:88%;
+    left:45%;
+    z-index:2;
+    cursor:pointer;
+}
+
+.video{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+}
+
+canvas{
+    height:70%;
+    width:70%;
+    left:15%;
+    top:15%;
+}
+
+.savebutton, .printbutton{
+    position:absolute;
+    top:0;
+    left:0;
+    top:85%;
+    left:35%;
+    
+}
+
+.printbutton{
+    left:55%;
+}
+
+
+footer{
+    text-align:center;
+}
+
+
+@media screen and (max-width:450px){
+    .fileinput{
+        left:15%;
+    }
+}
