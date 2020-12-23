@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Luckiest Guy', cursive;
+    position:relative;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    background:linear-gradient(to right,lightgray,gray,lightgray)
+}
+
+header,footer{
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+header{
+    height:15vh;
+}
+
+.imagesContainer{
+    height:70%;
+    width:100%;
+}
+
+.linkRow{
+    text-align:center;
+}

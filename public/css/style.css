@@ -50,6 +50,12 @@ header{
     cursor:pointer;
 }
 
+.shareLink{
+    left:45%;
+    text-decoration:none;
+    color:black;
+}
+
 
 .camerabutton{
     margin-left:10%;
@@ -73,15 +79,21 @@ header{
 .mainCard{
     height:70%;
     width:90%;
-    top:15%;
+    top:5%;
     left:5%;
     border:1px solid black;
     display:flex;
 }
 
 .vidContainer, .imageGrid{
-    width:50%;
+    width:100%;
     height:100%;
+}
+
+.vidContainer{
+    display:flex;
+    align-items:center;
+    justify-content: center;
 }
 
 .imageGrid{
@@ -90,6 +102,15 @@ header{
     align-items:center;
     flex-direction:column; */
     overflow:auto;
+    top:10%;
+}
+
+.imageGrid{
+    width:90%;
+    left:5%;
+    height:300px;
+    overflow:auto;
+    border:1px solid black;
 }
 
 .picDiv{
@@ -99,6 +120,7 @@ header{
     height:100px;
     left:15%;
     margin-bottom:2px;
+    text-align:center;
 }
 
 .printPic{
@@ -107,9 +129,14 @@ header{
 }
 
 .videocard, .capturecard{
-    height:50%;
-    width:100%;
+    height:100%;
+    width:50%;
     border:1px solid black;
+}
+
+.btn-caption{
+    left:20%;
+    top:5%;
 }
 
 .videocard{
@@ -148,7 +175,8 @@ canvas{
 }
 
 .printbutton{
-    left:55%;
+    left:40%;
+    top:90%;
 }
 
 
