@@ -11,7 +11,7 @@ app.use(express.static("public"))
 app.use(fileUpload());
 const path = require('path')
 
-let files = [];
+// let files = [];
 
 app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname, "public/index.html"))
@@ -33,17 +33,17 @@ app.post("/upload",(req,res)=>{
     })
 })
 
-app.post("/share",(req,res)=>{
-    console.log('/share post pinged');
-    let file = req.body.file
-    files.push(file);
-    res.json({msg:"Shared image received!"})
-})
+// app.post("/share",(req,res)=>{
+//     console.log('/share post pinged');
+//     let file = req.body.file
+//     files.push(file);
+//     res.json({msg:"Shared image received!"})
+// })
 
 
-app.get("/images",(req,res)=>{
-    res.json({files})
-})
+// app.get("/images",(req,res)=>{
+//     res.json({files})
+// })
 
 
 
